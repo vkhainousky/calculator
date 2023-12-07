@@ -2,35 +2,97 @@
 <center>
   <h3>Калькулятор</h3>
   <h2>Простой, обычный калькулятор.</h2>
-  <input readonly>
+  <script>
+    function clean() {
+      var output = document.getElementById("output");
+      output.value = "";
+    }
+    function one() {
+      var output = document.getElementById("output");
+      output.value += "1";
+    }
+    function two() {
+      var output = document.getElementById("output");
+      output.value += "2";
+    }
+    function three() {
+      var output = document.getElementById("output");
+      output.value += "3";
+    }
+    function four() {
+      var output = document.getElementById("output");
+      output.value += "4";
+    }
+    function five() {
+      var output = document.getElementById("output");
+      output.value += "5";
+    }
+    function six() {
+      var output = document.getElementById("output");
+      output.value += "6";
+    }
+    function seven() {
+      var output = document.getElementById("output");
+      output.value += "7";
+    }
+    function eight() {
+      var output = document.getElementById("output");
+      output.value += "8";
+    }
+    function nine() {
+      var output = document.getElementById("output");
+      output.value += "9";
+    }
+    function zero() {
+      var output = document.getElementById("output");
+      output.value += "0";
+    }
+    function divide() {
+      var output = document.getElementById("output");
+      output.value += "/";
+    }
+    function multiply() {
+      var output = document.getElementById("output");
+      output.value += "*";
+    }
+    function plus() {
+      var output = document.getElementById("output");
+      output.value += "+";
+    }
+    function minus() {
+      var output = document.getElementById("output");
+      output.value += "-";
+    }
+  </script>
+  <input id="output" readonly>
   <div id="row">
-    <button>1</button>
-    <button>2</button>
-    <button>3</button>
+    <button onclick="one()">1</button>
+    <button onclick="two()">2</button>
+    <button onclick="three()">3</button>
     <br>
   </div>
   <div id="row">
-    <button>4</button>
-    <button>5</button>
-    <button>6</button>
+    <button onclick="four()">4</button>
+    <button onclick="five()">5</button>
+    <button onclick="six()">6</button>
     <br>
   </div>
   <div id="row">
-    <button>7</button>
-    <button>8</button>
-    <button>9</button>
+    <button onclick="seven()">7</button>
+    <button onclick="eight()">8</button>
+    <button onclick="nine()">9</button>
     <br>
   </div>
   <div id="row">
-    <button>/</button>
-    <button>0</button>
-    <button>x</button>
+    <button onclick="divide()">/</button>
+    <button onclick="zero()">0</button>
+    <button onclick="multiply()">x</button>
     <br>
   </div>
   <div id="row">
-    <button>-</button>
-    <button>+</button>
-    <button>CE</button>
+    <button onclick="minus()">-</button>
+    <button onclick="plus()">+</button>
+    <button onclick="clean()">CE</button>
     <br>
   </div>
 </center>
