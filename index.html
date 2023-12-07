@@ -63,6 +63,10 @@
       var output = document.getElementById("output");
       output.value += "-";
     }
+    function stepen() {
+      var output = document.getElementById("output");
+      output.value += "^";
+    }
     function calculate() {
       var output = document.getElementById("output");
       output.value = eval(output.value);
@@ -99,6 +103,9 @@
     <button onclick="clean()">CE</button>
     <br>
   </div>
-  <button onclick="calculate()">=</button>
+  <div id="row">
+    <button onclick="stepen()">x²</button>
+    <button onclick="calculate()">=</button>
+  </div>
 </center>
 <!--GitHub Pages--!>
