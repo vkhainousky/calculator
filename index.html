@@ -63,6 +63,10 @@
       var output = document.getElementById("output");
       output.value += "-";
     }
+    function calculate() {
+      var output = document.getElementById("output");
+      output.value = eval(output.value);
+    }
   </script>
   <input id="output" readonly>
   <div id="row">
@@ -95,5 +99,6 @@
     <button onclick="clean()">CE</button>
     <br>
   </div>
+  <button onclick="calculate()">=</button>
 </center>
 <!--GitHub Pages--!>
