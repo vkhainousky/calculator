@@ -67,6 +67,10 @@
       var output = document.getElementById("output");
       output.value += "**";
     }
+    function procent() {
+      var output = document.getElementById("output");
+      output.value += "%";
+    }
     function calculate() {
       var output = document.getElementById("output");
       output.value = eval(output.value);
@@ -106,6 +110,7 @@
   <div id="row">
     <button onclick="stepen()">x²</button>
     <button onclick="calculate()">=</button>
+    <button onclick="procent()">%</button>
   </div>
 </center>
 <!--GitHub Pages--!>
